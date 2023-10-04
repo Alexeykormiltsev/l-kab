@@ -1,0 +1,119 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'global';
+@import 'libs';
+
+.header {
+    position: relative;
+
+    &::before {
+        content: '';
+        position: fixed;
+        width: 216px;
+        height: 15px;
+        // bottom: -11px;
+        top: 95px;
+        left: 15px;
+        background: #fff;
+        z-index: 20;
+    }
+
+    // box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.10);
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        // gap: 15px;
+        padding: 15px 0;
+        box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.10);
+    }
+
+    &__logo {
+        margin-left: 18px;
+        margin-right: 48px;
+    }
+
+    &__search {
+        display: flex;
+        gap: 10px;
+        align-items: baseline;
+        border-radius: 4px;
+        border: 1px solid var(--main-secondary, #70C05B);
+        background: var(--main-surface, #FFF);
+    }
+
+    &__form {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        border-radius: 4px;
+        border: 1px solid #70C05B;
+        background: #FFF;
+        padding: 5px 7px;
+    }
+
+    input {
+        border: none;
+        font-size: 16px;
+        outline: none;
+        line-height: 150%;
+
+        &::placeholder {
+            color: #BFBFBF;
+        }
+    }
+
+    .date-min,
+    .date-max {
+        max-width: 145px;
+        padding: 5px 7px;
+        display: flex;
+        align-items: baseline;
+        gap: 8px;
+        border-radius: 4px;
+        box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.10);
+        color: #BFBFBF;
+        position: relative;
+
+        input {
+            max-width: 120px;
+            outline: none;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            top: 6px;
+            right: 6px;
+            background-image: url(../images/calendar.svg);
+            z-index: 10;
+        }
+    }
+
+    .date-search {
+        min-width: 240px;
+    }
+}
+
+.main {
+    &__wrapper {
+        display: flex;
+    }
+
+    &__menu {
+    z-index: 10;
+        min-width: 216px;
+        height: 928px;
+        box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.10);
+    }
+    &__content{
+    width: 100%;
+    height: 928px;
+    background: #FBF8EC;
+    }
+}
+
+
+@import 'media';
