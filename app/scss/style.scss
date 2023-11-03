@@ -5,114 +5,102 @@
 @import 'libs';
 
 .header {
-    position: relative;
+    padding: 20px 0 0;
 
-    &::before {
-        content: '';
-        position: absolute;
-        width: 216px;
-        height: 15px;
-        // bottom: -11px;
-        top: 95px;
-        left: 0;
-        background: #fff;
-        z-index: 20;
-    }
-
-    // box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.10);
-    &__wrapper {
+    &__top {
         display: flex;
+        justify-content: space-between;
         align-items: center;
-        // gap: 15px;
-        padding: 15px 0;
-        box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.10);
+        margin-bottom: 540px;
     }
 
-    &__logo {
-        margin-left: 18px;
-        margin-right: 48px;
-    }
-
-    &__search {
+    &__social-list {
         display: flex;
-        gap: 10px;
-        align-items: baseline;
-        border-radius: 4px;
-        border: 1px solid var(--main-secondary, #70C05B);
-        background: var(--main-surface, #FFF);
+        gap: 40px;
     }
 
-    &__form {
-        display: flex;
-        gap: 16px;
-        align-items: center;
-        border-radius: 4px;
-        border: 1px solid #70C05B;
-        background: #FFF;
-        padding: 5px 7px;
-    }
-
-    input {
-        border: none;
-        font-size: 16px;
-        outline: none;
-        line-height: 150%;
-
-        &::placeholder {
-            color: #BFBFBF;
-        }
-    }
-
-    .date-min,
-    .date-max {
-        max-width: 145px;
-        padding: 5px 7px;
-        display: flex;
-        align-items: baseline;
-        gap: 8px;
-        border-radius: 4px;
-        box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.10);
-        color: #BFBFBF;
+    &__content {
+        margin-left: auto;
+        padding: 70px;
+        background: #F8F200;
+        color: #000;
+        max-width: 624px;
+        flex-shrink: 0;
         position: relative;
+        clip-path: polygon(8% 0, 80% 0%, 100% 0, 100% 85%, 92% 100%, 20% 100%, 0 100%, 0 15%);
 
-        input {
-            max-width: 120px;
-            outline: none;
-        }
+        // &:after {
+        //     position: absolute;
+        //     content: '';
+        //     width: 0;
+        //     height: 0;
+        //     border-left: 20px solid transparent;
+        //     border-top: 20px solid transparent;
+        //     border-right: 20px solid #fff;
+        //     border-bottom: 20px solid #fff;
+        //     bottom: 0;
+        //     right: 0;
+        // }
 
-        &::after {
-            content: '';
-            position: absolute;
-            width: 24px;
-            height: 24px;
-            top: 6px;
-            right: 6px;
-            background-image: url(../images/calendar.svg);
-            z-index: 10;
-        }
+        // &:before {
+        //     position: absolute;
+        //     content: '';
+        //     width: 0;
+        //     height: 0;
+        //     border-right: 20px solid transparent;
+        //     border-bottom: 20px solid transparent;
+        //     border-left: 20px solid #fff;
+        //     border-top: 20px solid #fff;
+        //     top: 0;
+        //     left: 0;
+        // }
     }
 
-    .date-search {
-        min-width: 240px;
+    &__title {
+        @extend %arh-400;
+        font-size: 62px;
+        line-height: normal;
+        margin-bottom: 25px;
+    }
+
+    &__content-link {
+        color: #F8F200;
+        @extend %rob-700;
+        font-size: 24px;
+        line-height: 40px;
+        background: #000;
+        padding: 19px 50px;
     }
 }
 
-.main {
-    &__wrapper {
-        display: flex;
-    }
+// @keyframes bg-сhange {
+//     from {
+//         background-image: url('../images/bg1.jpg');
+//     }
 
-    &__menu {
-    z-index: 10;
-        min-width: 216px;
-        height: 928px;
-        box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.10);
-    }
-    &__content{
-    width: 100%;
-    height: 928px;
-    background: #FBF8EC;
-    }
+//     35% {
+//         background-image: url('../images/bg2.jpg');
+//     }
+
+
+//     70% {
+//         background-image: url('../images/bg3.jpg');
+//     }
+
+//     to {
+//         background-image: url('../images/bg1.jpg');
+//     }
+// }
+
+// #bg {
+//     position: relative;
+//     background-size: cover;
+// animation: bg-сhange 10s infinite;
+// }
+#bg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 

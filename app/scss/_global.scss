@@ -4,32 +4,16 @@
  }
 
  body {
-     font-size: 16px;
-     line-height: 26px;
+     @extend %rob-400;
+     font-size: 18px;
+     line-height: normal;
      display: flex;
      flex-direction: column;
-     background: #fff;
- }
-
- .main {
-     flex-grow: 1;
+     color: #fff;
  }
 
  .container {
-     max-width: 1440px;
+     max-width: 1300px;
      margin: 0 auto;
-     padding: 0 15px;
+     padding: 0 10px;
  }
-
- button {
-     border-color: transparent;
-     background-color: inherit;
- }
-
-
- //  a {
- //      color: $default;
- //      @extend %quicksand-500;
- //      font-size: 16px;
- //      line-height: 36px;
- //  }
