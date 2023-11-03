@@ -1,0 +1,41 @@
+@media (max-width:900px) {
+    .header {
+        &__top {
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        &__content {
+            max-width: 60%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        &__title {
+            font-size: 38px;
+        }
+
+        &__content-link {
+            font-size: 20px;
+            white-space: nowrap;
+        }
+    }
+}
+
+@media (max-width:650px) {
+    .header {
+        &__top {
+            margin-bottom: 450px;
+        }
+
+        &__content {
+            max-width: 100%;
+            padding: 30px 12px;
+            transform: translateY(20%)
+        }
+
+        &__title {
+            font-size: 30px;
+        }
+    }
+}
