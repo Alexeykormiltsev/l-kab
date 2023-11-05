@@ -371,18 +371,24 @@
 .shop {
     display: flex;
 
+    &__right-content {
+        max -width: 530px;
+    }
+
     &__right {
         background: #000;
         padding: 70px 0 77px 32px;
         width: 50%;
-      .container{
-       max-width: 100%;
-      }
+
+        .container {
+            max-width: 100%;
+        }
     }
-    &__left{
-     width: 50%;
-     flex-shrink: 0;
-     background-image: url(../images/shop-bg.jpg);
+
+    &__left {
+        width: 50%;
+        flex-shrink: 0;
+        background-image: url(../images/shop-bg.jpg);
     }
 
     &__title {
@@ -397,24 +403,27 @@
         font-size: 24px;
         margin-bottom: 15px;
     }
-    &__list{
-     display: flex;
-     flex-direction: column;
-     gap: 15px;
-     margin-bottom: 15px !important;
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 15px !important;
     }
-    &__item{
-     display: flex;
-     align-items: center;
-     gap: 10px;
+
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
     }
-    &__platforms{
-     max-width: 350px;
-     display: flex;
-     justify-content: space-between;
-     flex-wrap: wrap;
-     row-gap: 80px;
-     column-gap: 55px;
+
+    &__platforms {
+        max-width: 350px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        row-gap: 80px;
+        column-gap: 55px;
     }
 }
 
