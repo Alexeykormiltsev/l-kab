@@ -370,14 +370,14 @@
 
 .shop {
     display: flex;
-    justify-content: center;
-    position: relative;
 
     &__right {
         background: #000;
         padding: 70px 0 77px 32px;
-        max-width: 50%;
-      
+        width: 50%;
+      .container{
+       max-width: 100%;
+      }
     }
     &__left{
      width: 50%;
