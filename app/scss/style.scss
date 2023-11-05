@@ -381,6 +381,8 @@
     }
     &__left{
      width: 50%;
+     flex-shrink: 0;
+     background-image: url(../images/shop-bg.jpg);
     }
 
     &__title {
